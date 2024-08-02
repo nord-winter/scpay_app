@@ -3,7 +3,23 @@
 	import logo from '$lib/images/svelte-logo.svg';
 </script>
 
-<header>
+<div class="container">
+	<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+	<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+		<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+		<span class="fs-4">Simple header</span>
+	</a>
+
+	<ul class="nav nav-pills">
+		<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+	</ul>
+	</header>
+</div>
+<!-- <header>
 	<div class="corner">
 		<a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" />
@@ -29,7 +45,7 @@
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
 		</svg>
 	</nav>
-</header>
+</header> -->
 
 <style>
 	header {
@@ -37,7 +53,7 @@
 		justify-content: space-between;
 	}
 
-	.corner {
+	/* .corner {
 		width: 3em;
 		height: 3em;
 	}
@@ -54,13 +70,13 @@
 		width: 2em;
 		height: 2em;
 		object-fit: contain;
-	}
+	} */
 
-	nav {
+	/* nav {
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
-	}
+	} */
 
 	svg {
 		width: 2em;
@@ -68,9 +84,9 @@
 		display: block;
 	}
 
-	path {
+	/* path {
 		fill: var(--background);
-	}
+	} */
 
 	ul {
 		position: relative;
@@ -90,7 +106,7 @@
 		height: 100%;
 	}
 
-	li[aria-current='page']::before {
+	/* li[aria-current='page']::before {
 		--size: 6px;
 		content: '';
 		width: 0;
@@ -114,7 +130,7 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
-	}
+	} */
 
 	a:hover {
 		color: var(--color-theme-1);

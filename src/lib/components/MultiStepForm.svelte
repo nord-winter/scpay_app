@@ -11,35 +11,25 @@
 	}
 </script>
 
-<main>
-	<div class="container">
-		<ProgressBar {steps} bind:currentActive bind:this={progressBar}/>
-		
-		<Form active_step={steps[currentActive-1]}/>
+<div>
+    <ProgressBar {steps} bind:currentActive bind:this={progressBar}/>
+    
+    <Form active_step={steps[currentActive-1]}/>
 
-		<div class="step-button">
-			<button class="btn" on:click={() => handleProgress(-1)} disabled={currentActive === 1}>Prev</button>
-			<button class="btn" on:click={() => handleProgress(+1)} disabled={currentActive === steps.length}>Next</button>
-		</div>		
-	</div>	  
-</main>
+    <div class="step-button">
+        <button class="btn" on:click={() => handleProgress(-1)} disabled={currentActive === 1}>Prev</button>
+        <button class="btn" on:click={() => handleProgress(+1)} disabled={currentActive === steps.length}>Next</button>
+    </div>		
+</div>
 
 <style>
+
     @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
     * {
         box-sizing: border-box;
     }
 
-    main {
-        font-family: 'Muli', sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        overflow: hidden;
-        margin: 0;
-    }
 
     .btn {
         background-color: #3498db;

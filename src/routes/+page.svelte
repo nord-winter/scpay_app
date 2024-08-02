@@ -11,7 +11,7 @@
 </svelte:head>
 
 <section>
-	<h1>
+	<!-- <h1>
 		<span class="welcome">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
@@ -24,10 +24,36 @@
 
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+	</h2> -->
 
-	<Counter />
-	<MultiStepForm />
+	<div class="container text-center bg-body-tertiary">
+		<div class="col-md-6 p-lg-5 mx-auto my-5">
+		<h1 class="display-3 fw-bold">Designed for engineers</h1>
+		<h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
+		<div class="d-flex gap-3 justify-content-center lead fw-normal">
+			<!-- svelte-ignore a11y-invalid-attribute -->
+			<a class="icon-link" href="#">
+			Learn more
+			<svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+			</a>
+			<!-- svelte-ignore a11y-invalid-attribute -->
+			<a class="icon-link" href="#">
+			Buy
+			<svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+			</a>
+		</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-around">
+			<Counter />
+			<MultiStepForm />
+		</div>
+	</div>
+
+	
+
+	
 </section>
 
 <style>
@@ -39,11 +65,11 @@
 		flex: 0.6;
 	}
 
-	h1 {
+	/* h1 {
 		width: 100%;
-	}
+	} */
 
-	.welcome {
+	/* .welcome {
 		display: block;
 		position: relative;
 		width: 100%;
@@ -57,5 +83,5 @@
 		height: 100%;
 		top: 0;
 		display: block;
-	}
+	} */
 </style>
