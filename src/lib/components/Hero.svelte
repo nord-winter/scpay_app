@@ -1,7 +1,7 @@
 <script>
     import product from '$lib/images/product.png'
 </script>
-
+<!-- Jame you need change here  -->
 <section>
     <div class="container">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">

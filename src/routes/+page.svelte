@@ -5,6 +5,7 @@
 	import MultiStepForm from '$lib/components/MultiStepForm.svelte';
 	import Cards from '../lib/components/Cards.svelte';
 	import Hero from '$lib/components/Hero.svelte';
+	import product from '$lib/images/product.png';
 </script>
 
 <svelte:head>
@@ -51,12 +52,12 @@
 <section>
 	<div class="container">
 		<div class="d-flex flex-column flex-md-row gap-4 pt-5 align-items-center justify-content-around">
-			<Counter />
+			<img src="{product}" alt="">
 			<MultiStepForm />
 		</div>
 	</div>
 </section>
-
+<Counter />
 <Cards />
 
 <Hero />
