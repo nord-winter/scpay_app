@@ -3,6 +3,8 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import MultiStepForm from '$lib/components/MultiStepForm.svelte';
+	import Cards from '../lib/components/Cards.svelte';
+	import Hero from '$lib/components/Hero.svelte';
 </script>
 
 <svelte:head>
@@ -44,17 +46,20 @@
 		</div>
 		</div>
 	</div>
+</section>
+
+<section>
 	<div class="container">
-		<div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-around">
+		<div class="d-flex flex-column flex-md-row gap-4 pt-5 align-items-center justify-content-around">
 			<Counter />
 			<MultiStepForm />
 		</div>
 	</div>
-
-	
-
-	
 </section>
+
+<Cards />
+
+<Hero />
 
 <style>
 	section {
