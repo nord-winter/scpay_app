@@ -1,8 +1,15 @@
-<script>
+<script lang="ts">
 	import Header from '../lib/components/Header.svelte';
 	import '../app.css';
 	import 'bootstrap/dist/css/bootstrap.min.css';
-  	// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+	
+  	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		if (typeof window !== 'undefined') {
+			await import('bootstrap/dist/js/bootstrap.min.js');
+		}
+	});
 
 </script>
 
