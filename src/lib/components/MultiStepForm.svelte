@@ -3,7 +3,7 @@
 	import ProgressBar from './ProgressBar.svelte';
 
 	let steps: string[] = ['Info', 'Address', 'Payment', 'Confirmation'];
-	let currentActive: number = 1;
+	let currentActive: number = 1; // Отключает активность кнопки
 	let progressBar: any;
 
 	const handleProgress = (stepIncrement: number): void => {
