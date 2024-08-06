@@ -2,9 +2,12 @@
 	import Form from './Form.svelte';
 	import ProgressBar from './ProgressBar.svelte';
 
+
 	let steps: string[] = ['Info', 'Address', 'Payment', 'Confirmation'];
 	let currentActive: number = 1; // Отключает активность кнопки
 	let progressBar: any;
+
+ let stepIncrement: number = 0;
 	// Необходимо дабавить дефолтное значение к stepInxrement
 	const handleProgress = (stepIncrement: number): void => {
 		progressBar.handleProgress(stepIncrement);
