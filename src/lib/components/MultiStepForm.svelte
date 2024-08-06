@@ -5,7 +5,7 @@
 	let steps: string[] = ['Info', 'Address', 'Payment', 'Confirmation'];
 	let currentActive: number = 1; // Отключает активность кнопки
 	let progressBar: any;
-
+	// Необходимо дабавить дефолтное значение к stepInxrement
 	const handleProgress = (stepIncrement: number): void => {
 		progressBar.handleProgress(stepIncrement);
 	}
